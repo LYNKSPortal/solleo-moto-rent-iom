@@ -55,6 +55,12 @@ export default function Navbar() {
                 FAQ
               </Link>
               <Link
+                href="/gift-cards"
+                className="text-blue-700 hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              >
+                Gift Cards
+              </Link>
+              <Link
                 href="/contact"
                 className="text-blue-700 hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >
@@ -154,6 +160,13 @@ export default function Navbar() {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   FAQ
+                </Link>
+                <Link
+                  href="/gift-cards"
+                  className="text-white hover:text-yellow-400 text-4xl font-semibold transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Gift Cards
                 </Link>
                 <Link
                   href="/contact"

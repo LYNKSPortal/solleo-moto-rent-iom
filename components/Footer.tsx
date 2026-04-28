@@ -81,6 +81,11 @@ export default function Footer() {
                   FAQ
                 </Link>
               </li>
+              <li>
+                <Link href="/gift-cards" className="hover:text-yellow-400 transition-colors">
+                  Gift Cards
+                </Link>
+              </li>
             </ul>
           </div>
 
