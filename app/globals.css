@@ -2,25 +2,55 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #092038;
+  --primary-blue: #092038;
+  --primary-yellow: #F8B407;
+  --accent-blue: #092038;
+  --dark-blue: #092038;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary-blue);
+  --color-accent: var(--primary-yellow);
+  --color-blue-600: #092038;
+  --color-blue-700: #092038;
+  --color-blue-500: #092038;
+  --color-yellow-400: #F8B407;
+  --color-yellow-500: #F8B407;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+p, li, span, a:not(.text-xl):not(.text-2xl):not(.text-3xl):not(.text-4xl):not(.text-5xl):not(.text-6xl) {
+  font-size: inherit !important;
+}
+
+nav a, nav p, nav span, nav li,
+footer a, footer p, footer span, footer li {
+  font-size: inherit !important;
+}
+
+.text-sm {
+  font-size: inherit !important;
 }
