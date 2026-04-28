@@ -54,7 +54,12 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Solleo Moto Rent - Honda PCX125 Scooter Rentals',
     description: 'Rent premium Honda PCX125 scooters in Estepona, Málaga from €50/day.',
-    images: ['/facebook-twitter-meta.jpg'],
+    images: {
+      url: 'https://solleomotorent.com/facebook-twitter-meta.jpg',
+      alt: 'Solleo Moto Rent - Honda PCX125 Scooter Rentals in Estepona, Málaga',
+    },
+    creator: '@solleomotorent',
+    site: '@solleomotorent',
   },
   robots: {
     index: true,
