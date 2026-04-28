@@ -4,40 +4,23 @@ import Image from 'next/image';
 export default function Footer() {
   return (
     <footer className="bg-blue-700 text-white mt-auto">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="text-center">
-            <div className="mb-4 flex justify-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
+          {/* Logo and Description */}
+          <div className="text-center lg:text-left">
+            <div className="mb-6 flex justify-center lg:justify-start">
               <Image
                 src="/logo-white.png"
                 alt="Solleo Moto Rent Logo"
-                width={300}
-                height={100}
+                width={200}
+                height={67}
                 className="object-contain h-auto"
               />
             </div>
-            <p className="text-sm">
-              Your trusted partner for motorcycle rentals in Estepona, Málaga. We offer premium Honda PCX125 scooters at affordable rates, so you can explore the Costa del Sol at your own pace. Experience the freedom of the open road with Solleo Moto Rent.
+            <p className="text-sm leading-relaxed mb-6">
+              Your trusted partner for motorcycle rentals in Estepona, Málaga. Experience the freedom of the open road.
             </p>
-          </div>
-
-          <div className="text-center">
-            <h4 className="text-lg font-semibold text-yellow-400 mb-4">Contact Info</h4>
-            <div className="space-y-2 text-sm inline-block text-left">
-              <div className="flex justify-between gap-8">
-                <span>Email:</span>
-                <span>support@solleomotorent.com</span>
-              </div>
-              <div className="flex justify-between gap-8">
-                <span>Phone:</span>
-                <span>+1 (555) 123-4567</span>
-              </div>
-              <div className="flex justify-between gap-8">
-                <span>Address:</span>
-                <span className="text-right">Pasaje Colina del Mirador 19,<br/>Unit 4, 29680 Estepona, Málaga</span>
-              </div>
-            </div>
-            <div className="flex justify-center gap-4 mt-4">
+            <div className="flex gap-4 justify-center lg:justify-start">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition-colors" aria-label="Facebook">
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
@@ -64,36 +47,76 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="text-center">
-            <h4 className="text-lg font-semibold text-yellow-400 mb-4">Hours</h4>
-            <div className="space-y-2 text-sm inline-block text-left">
-              <div className="flex justify-between gap-8">
-                <span>Monday</span>
-                <span>9:00 AM - 6:00 PM</span>
+          {/* Quick Links */}
+          <div className="text-center lg:text-left">
+            <h4 className="text-xl font-bold text-yellow-400 mb-6">Quick Links</h4>
+            <ul className="space-y-3">
+              <li>
+                <Link href="/" className="hover:text-yellow-400 transition-colors">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/fleet" className="hover:text-yellow-400 transition-colors">
+                  Our Fleet
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="hover:text-yellow-400 transition-colors">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/booking" className="hover:text-yellow-400 transition-colors">
+                  Book Now
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-yellow-400 transition-colors">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div className="text-center lg:text-left">
+            <h4 className="text-xl font-bold text-yellow-400 mb-6">Contact Info</h4>
+            <div className="space-y-4">
+              <div>
+                <p className="text-yellow-400 font-semibold mb-1">Email</p>
+                <a href="mailto:support@solleomotorent.com" className="hover:text-yellow-400 transition-colors">
+                  support@solleomotorent.com
+                </a>
               </div>
-              <div className="flex justify-between gap-8">
-                <span>Tuesday</span>
-                <span>9:00 AM - 6:00 PM</span>
+              <div>
+                <p className="text-yellow-400 font-semibold mb-1">Phone</p>
+                <a href="tel:+15551234567" className="hover:text-yellow-400 transition-colors">
+                  +1 (555) 123-4567
+                </a>
               </div>
-              <div className="flex justify-between gap-8">
-                <span>Wednesday</span>
-                <span>9:00 AM - 6:00 PM</span>
+              <div>
+                <p className="text-yellow-400 font-semibold mb-1">Address</p>
+                <p>Pasaje Colina del Mirador 19,<br/>Unit 4, 29680 Estepona, Málaga</p>
               </div>
-              <div className="flex justify-between gap-8">
-                <span>Thursday</span>
-                <span>9:00 AM - 6:00 PM</span>
+            </div>
+          </div>
+
+          {/* Hours */}
+          <div className="text-center lg:text-left">
+            <h4 className="text-xl font-bold text-yellow-400 mb-6">Opening Hours</h4>
+            <div className="space-y-3">
+              <div className="flex justify-between items-center py-2 border-b border-blue-600">
+                <span className="font-semibold text-lg">Monday - Friday</span>
+                <span className="text-lg">9:00 AM - 6:00 PM</span>
               </div>
-              <div className="flex justify-between gap-8">
-                <span>Friday</span>
-                <span>9:00 AM - 6:00 PM</span>
+              <div className="flex justify-between items-center py-2 border-b border-blue-600">
+                <span className="font-semibold text-lg">Saturday</span>
+                <span className="text-lg">10:00 AM - 4:00 PM</span>
               </div>
-              <div className="flex justify-between gap-8">
-                <span>Saturday</span>
-                <span>10:00 AM - 4:00 PM</span>
-              </div>
-              <div className="flex justify-between gap-8">
-                <span>Sunday</span>
-                <span>Closed</span>
+              <div className="flex justify-between items-center py-2">
+                <span className="font-semibold text-lg">Sunday</span>
+                <span className="text-lg text-red-400">Closed</span>
               </div>
             </div>
           </div>

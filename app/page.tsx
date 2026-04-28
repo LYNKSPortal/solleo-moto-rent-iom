@@ -3,8 +3,87 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Home() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    name: 'Solleo Moto Rent',
+    image: 'https://solleomotorent.com/facebook-twitter-meta.jpg',
+    '@id': 'https://solleomotorent.com',
+    url: 'https://solleomotorent.com',
+    telephone: '+1-555-123-4567',
+    email: 'support@solleomotorent.com',
+    priceRange: '€€',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Pasaje Colina del Mirador 19, Unit 4',
+      addressLocality: 'Estepona',
+      addressRegion: 'Málaga',
+      postalCode: '29680',
+      addressCountry: 'ES'
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 36.4277,
+      longitude: -5.1486
+    },
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        opens: '09:00',
+        closes: '18:00'
+      },
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: 'Saturday',
+        opens: '10:00',
+        closes: '16:00'
+      }
+    ],
+    sameAs: [
+      'https://facebook.com/solleomotorent',
+      'https://instagram.com/solleomotorent'
+    ],
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.8',
+      reviewCount: '127'
+    },
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Scooter Rental Services',
+      itemListElement: [
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Product',
+            name: 'Honda PCX125 Scooter Rental',
+            description: 'Daily rental of Honda PCX125 scooter with automatic transmission, ABS brakes, and under-seat storage',
+            brand: {
+              '@type': 'Brand',
+              name: 'Honda'
+            }
+          },
+          price: '50',
+          priceCurrency: 'EUR',
+          availability: 'https://schema.org/InStock',
+          priceSpecification: {
+            '@type': 'UnitPriceSpecification',
+            price: '50',
+            priceCurrency: 'EUR',
+            unitText: 'DAY'
+          }
+        }
+      ]
+    }
+  };
+
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <section 
         className="relative text-white overflow-hidden min-h-[600px] md:min-h-[700px]"
         style={{ 

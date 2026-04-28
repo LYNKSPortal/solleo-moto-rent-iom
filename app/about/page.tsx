@@ -1,3 +1,14 @@
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About Us - Your Trusted Scooter Rental Partner',
+  description: 'Learn about Solleo Moto Rent, your trusted partner for Honda PCX125 scooter rentals in Estepona, Málaga. Experience the freedom of the open road on Costa del Sol.',
+  openGraph: {
+    title: 'About Us | Solleo Moto Rent',
+    description: 'Your trusted partner for scooter rentals in Estepona, Málaga.',
+  },
+};
+
 export default function About() {
   return (
     <div className="min-h-screen bg-gray-50">

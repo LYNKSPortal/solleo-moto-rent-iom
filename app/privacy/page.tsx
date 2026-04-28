@@ -1,3 +1,14 @@
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy - Data Protection',
+  description: 'Solleo Moto Rent privacy policy. Learn how we collect, use, and protect your personal information for scooter rentals in Estepona, Málaga.',
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
 export default function Privacy() {
   return (
     <div className="min-h-screen bg-gray-50">

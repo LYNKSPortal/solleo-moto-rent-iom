@@ -1,3 +1,14 @@
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Refund Policy - Cancellation Terms',
+  description: 'Solleo Moto Rent refund and cancellation policy. 100% refund for cancellations 48+ hours before rental. Learn about our deposit refund terms.',
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
 export default function RefundPolicy() {
   return (
     <div className="min-h-screen bg-gray-50">

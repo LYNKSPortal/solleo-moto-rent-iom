@@ -1,5 +1,16 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Our Fleet - Honda PCX125 Scooters',
+  description: '6 Honda PCX125 scooters available for rent in Estepona. 125cc engine, automatic transmission, ABS brakes, fuel efficient. Perfect for exploring Costa del Sol.',
+  openGraph: {
+    title: 'Our Fleet - Honda PCX125 Scooters | Solleo Moto Rent',
+    description: '6 Honda PCX125 scooters available for rent in Estepona.',
+    images: ['/facebook-twitter-meta.jpg'],
+  },
+};
 
 const bikes = [
   {
@@ -30,7 +41,7 @@ export default function Fleet() {
             className="bg-white rounded-lg shadow-xl overflow-hidden mb-12"
           >
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
-              <div className="relative h-64 lg:h-auto bg-gray-100">
+              <div className="relative aspect-square lg:h-auto bg-gray-100">
                 <Image
                   src="/motorbike.jpg"
                   alt="Honda PCX125 Scooter"

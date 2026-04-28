@@ -1,3 +1,14 @@
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Terms & Conditions - Rental Agreement',
+  description: 'Read Solleo Moto Rent terms and conditions for Honda PCX125 scooter rentals in Estepona. Rental terms, payment, deposit, insurance, and liability information.',
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
 export default function Terms() {
   return (
     <div className="min-h-screen bg-gray-50">
