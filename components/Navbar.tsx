@@ -29,7 +29,7 @@ export default function Navbar() {
           </div>
 
           <div className="hidden lg:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+            <div className="ml-10 flex items-center space-x-4">
               <Link
                 href="/"
                 className="text-blue-700 hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
@@ -47,6 +47,12 @@ export default function Navbar() {
                 className="text-blue-700 hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >
                 About Us
+              </Link>
+              <Link
+                href="/faq"
+                className="text-blue-700 hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              >
+                FAQ
               </Link>
               <Link
                 href="/contact"
@@ -141,6 +147,13 @@ export default function Navbar() {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   About Us
+                </Link>
+                <Link
+                  href="/faq"
+                  className="text-white hover:text-yellow-400 text-4xl font-semibold transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  FAQ
                 </Link>
                 <Link
                   href="/contact"

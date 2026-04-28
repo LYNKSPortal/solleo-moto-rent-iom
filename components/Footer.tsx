@@ -7,8 +7,8 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
           {/* Logo and Description */}
-          <div className="text-center lg:text-left">
-            <div className="mb-6 flex justify-center lg:justify-start">
+          <div className="text-center">
+            <div className="mb-6 flex justify-center">
               <Image
                 src="/logo-white.png"
                 alt="Solleo Moto Rent Logo"
@@ -20,7 +20,7 @@ export default function Footer() {
             <p className="text-sm leading-relaxed mb-6">
               Your trusted partner for motorcycle rentals in Estepona, Málaga. Experience the freedom of the open road.
             </p>
-            <div className="flex gap-4 justify-center lg:justify-start">
+            <div className="flex gap-4 justify-center">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition-colors" aria-label="Facebook">
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
@@ -48,7 +48,7 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className="text-center lg:text-left">
+          <div className="text-center">
             <h4 className="text-xl font-bold text-yellow-400 mb-6">Quick Links</h4>
             <ul className="space-y-3">
               <li>
@@ -76,11 +76,16 @@ export default function Footer() {
                   Contact
                 </Link>
               </li>
+              <li>
+                <Link href="/faq" className="hover:text-yellow-400 transition-colors">
+                  FAQ
+                </Link>
+              </li>
             </ul>
           </div>
 
           {/* Contact Info */}
-          <div className="text-center lg:text-left">
+          <div className="text-center">
             <h4 className="text-xl font-bold text-yellow-400 mb-6">Contact Info</h4>
             <div className="space-y-4">
               <div>
@@ -103,20 +108,20 @@ export default function Footer() {
           </div>
 
           {/* Hours */}
-          <div className="text-center lg:text-left">
+          <div className="text-center">
             <h4 className="text-xl font-bold text-yellow-400 mb-6">Opening Hours</h4>
-            <div className="space-y-3">
-              <div className="flex justify-between items-center py-2 border-b border-blue-600">
-                <span className="font-semibold text-lg">Monday - Friday</span>
-                <span className="text-lg">9:00 AM - 6:00 PM</span>
+            <div className="space-y-4">
+              <div>
+                <p className="text-yellow-400 font-semibold mb-1">Monday - Friday</p>
+                <p>9:00 AM - 6:00 PM</p>
               </div>
-              <div className="flex justify-between items-center py-2 border-b border-blue-600">
-                <span className="font-semibold text-lg">Saturday</span>
-                <span className="text-lg">10:00 AM - 4:00 PM</span>
+              <div>
+                <p className="text-yellow-400 font-semibold mb-1">Saturday</p>
+                <p>10:00 AM - 4:00 PM</p>
               </div>
-              <div className="flex justify-between items-center py-2">
-                <span className="font-semibold text-lg">Sunday</span>
-                <span className="text-lg text-red-400">Closed</span>
+              <div>
+                <p className="text-yellow-400 font-semibold mb-1">Sunday</p>
+                <p className="text-red-400 font-bold">Closed</p>
               </div>
             </div>
           </div>

@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import ScrollAnimations from "@/components/ScrollAnimations";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -111,7 +110,6 @@ export default function RootLayout({
         <meta name="twitter:image:alt" content="Solleo Moto Rent - Honda PCX125 Scooter Rentals" />
       </head>
       <body className="min-h-full flex flex-col">
-        <ScrollAnimations />
         <Navbar />
         <main className="flex-grow">{children}</main>
         <Footer />

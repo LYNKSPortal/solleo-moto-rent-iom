@@ -20,7 +20,7 @@ export default function Booking() {
         <div className="mt-12 bg-white rounded-lg shadow-lg p-8">
           <h2 className="text-2xl font-bold text-blue-700 mb-6">Rental Information</h2>
           
-          <div className="space-y-4">
+          <div className="space-y-8">
             <div className="border-l-4 border-yellow-400 pl-4">
               <h3 className="font-semibold text-blue-700 mb-2">Pricing</h3>
               <ul className="space-y-1 text-gray-700">
