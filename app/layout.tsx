@@ -96,6 +96,19 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="apple-mobile-web-app-title" content="Solleo Moto" />
+        
+        {/* Explicit Open Graph tags for WhatsApp */}
+        <meta property="og:image" content="https://solleomotorent.com/facebook-twitter-meta.jpg" />
+        <meta property="og:image:secure_url" content="https://solleomotorent.com/facebook-twitter-meta.jpg" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Solleo Moto Rent - Honda PCX125 Scooter Rentals in Estepona, Málaga" />
+        
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://solleomotorent.com/facebook-twitter-meta.jpg" />
+        <meta name="twitter:image:alt" content="Solleo Moto Rent - Honda PCX125 Scooter Rentals" />
       </head>
       <body className="min-h-full flex flex-col">
         <ScrollAnimations />
